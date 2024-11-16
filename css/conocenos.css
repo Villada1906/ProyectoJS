@@ -98,3 +98,71 @@ iframe {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
+
+/* Media Queries para dispositivos móviles (480px y menores) */
+@media (max-width: 480px) {
+
+    .informacion,
+    .reseñas {
+        width: 95%;
+    }
+
+    .boton {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .informacion h2,
+    .reseñas h2 {
+        font-size: 1.2em;
+    }
+
+    .estrellas {
+        font-size: 0.9em;
+    }
+}
+
+/* Media Queries para tablets y pantallas medianas (768px y menores) */
+@media (max-width: 768px) {
+
+    .informacion,
+    .reseñas {
+        width: 90%;
+    }
+
+    .boton {
+        padding: 8px;
+    }
+
+    .informacion h2,
+    .reseñas h2 {
+        font-size: 1.5em;
+    }
+
+    .estrellas {
+        font-size: 1em;
+    }
+}
+
+/* Media Queries para pantallas grandes (1368px y mayores) */
+@media (min-width: 1368px) {
+
+    .informacion,
+    .reseñas {
+        width: 70%;
+    }
+
+    .boton {
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .informacion h2,
+    .reseñas h2 {
+        font-size: 2em;
+    }
+
+    .estrellas {
+        font-size: 1.5em;
+    }
+}

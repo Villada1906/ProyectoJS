@@ -9,7 +9,8 @@ footer {
     max-width: 1200px;
     margin: auto;
     text-align: center;
-    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas más pequeñas */
+    flex-wrap: wrap;
+    /* Permite que los elementos se acomoden en pantallas más pequeñas */
 }
 
 .logo-section {
@@ -33,10 +34,13 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 55%;
-    flex-wrap: wrap; /* Asegura que las secciones se reorganicen en pantallas pequeñas */
+    flex-wrap: wrap;
+    /* Asegura que las secciones se reorganicen en pantallas pequeñas */
 }
 
-.horarios, .metodos-pago, .contacto {
+.horarios,
+.metodos-pago,
+.contacto {
     width: 30%;
     margin-bottom: 20px;
 }
@@ -71,4 +75,59 @@ footer {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+
+/* Media Queries para dispositivos móviles (768px y menores) */
+@media (max-width: 768px) {
+    .footer_container {
+        flex-direction: column;
+        /* Cambiar de fila a columna */
+        text-align: center;
+        /* Centrar los elementos */
+    }
+
+    .logo-section,
+    .info-section {
+        width: 100%;
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horarios,
+    .metodos-pago,
+    .contacto {
+        width: 100%;
+        /* Cada sección ocupará toda la anchura en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    .footer_container h2,
+    .footer_container h3 {
+        font-size: 20px;
+        /* Ajustar el tamaño del texto */
+    }
+
+    .footer_container p {
+        font-size: 14px;
+    }
+}
+
+/* Media Queries para dispositivos móviles pequeños (480px y menores) */
+@media (max-width: 480px) {
+    .logo-section img {
+        max-width: 200px;
+        /* Reducir tamaño del logo en pantallas muy pequeñas */
+    }
+
+    .footer_container h2,
+    .footer_container h3 {
+        font-size: 18px;
+    }
+
+    .footer_container p {
+        font-size: 12px;
+    }
 }
